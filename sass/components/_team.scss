@@ -1,5 +1,5 @@
 .section-team {
-  background-color: var(--bgr-button-sectionteam);
+  background-color: $bcg-button-sectionteam;
 }
 
 .section-header {
@@ -18,7 +18,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-font);
+  background-color: $white-font;
 }
 
 .team-item:not(:last-child) {
@@ -36,7 +36,7 @@
 }
 
 .full-name {
-  color: var(--main-font-color);
+  color: $main-font-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -46,7 +46,7 @@
 .profession {
   font-size: 16px;
   line-height: 1.18;
-  color: var(--paragraphs-mail-tel);
+  color: $paragraphs-mail-tel;
 
   letter-spacing: 0.03em;
 }
@@ -68,7 +68,12 @@
   justify-content: center;
   align-items: center;
 
-  transition: background-color var(--transition-duration) var(--timing-function);
+  transition: background-color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+  }
 }
 
 .social-networks {
@@ -78,18 +83,13 @@
   margin-top: 16px;
 }
 
-.social-networks-link:hover,
-.social-networks-link:focus {
-  background-color: var(--brand-color);
-}
-
-.social-networks-link:hover .icon,
-.social-networks-link:focus .icon {
-  fill: var(--white-font);
-}
-
 .icon {
   fill: #afb1b8;
 
-  transition: fill var(--transition-duration) var(--timing-function);
+  transition: fill $transition-duration $timing-function;
+
+  .social-networks-link:hover &,
+  .social-networks-link:focus & {
+    fill: $white-font;
+  }
 }

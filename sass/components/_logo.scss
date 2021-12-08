@@ -1,11 +1,11 @@
 .logo-konstant {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 .logo-black {
-  color: var(--logo-black);
+  color: $logo-black;
 }
 .logo-white {
-  color: var(--white-font);
+  color: $white-font;
 }
 .logo {
   font-family: Raleway;
