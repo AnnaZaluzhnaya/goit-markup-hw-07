@@ -1,24 +1,24 @@
-.portfolio-card > .portfolio-item {
+.card-set > .card-set__item {
   margin-left: $portfolio-card-gap;
   margin-top: $portfolio-card-gap;
 
   transition: box-shadow $transition-duration $timing-function;
 }
 
-.portfolio-card {
+.card-set {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-item:nth-child(3n + 1) {
+.card-set__item:nth-child(3n + 1) {
   margin-left: 0px;
 }
 
-.portfolio-item:nth-child(-n + 3) {
+.card-set__item:nth-child(-n + 3) {
   margin-top: 0px;
 }
 
-.portfolio-item:hover {
+.card-set__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -29,7 +29,7 @@
   border: 1px solid #eeeeee;
 }
 
-.project-name {
+.card-content__project {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -38,17 +38,18 @@
   margin-bottom: 4px;
 }
 
-.type-project {
+.card-content__text {
   font-size: 16px;
   line-height: 1.87;
   color: $paragraphs-mail-tel;
 }
 
-.overlay-card {
+.overlay {
   position: relative;
+  overflow: hidden;
 }
 
-.title-wrapper {
+.overlay__wrapper {
   position: absolute;
   display: inline-block;
   content: "";
@@ -63,13 +64,13 @@
   transform: translateY(100%);
   transition: transform $transition-duration $timing-function;
 
-  .portfolio-link:hover &,
-  .portfolio-link:focus & {
+  .card-set__link:hover &,
+  .card-set__link:focus & {
     transform: translateY(0);
   }
 }
 
-.title-card {
+.overlay__text {
   width: 322px;
   height: 168px;
   padding-top: 63px;
@@ -84,8 +85,4 @@
 
   color: $white-font;
   z-index: 1;
-}
-
-.overlay-card {
-  overflow: hidden;
 }
