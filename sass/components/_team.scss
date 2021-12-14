@@ -9,11 +9,11 @@
   margin-bottom: 50px;
 }
 
-.team-list {
+.people-list {
   display: flex;
 }
 
-.team-item {
+.people-list__item {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -21,21 +21,21 @@
   background-color: $white-font;
 }
 
-.team-item:not(:last-child) {
+.people-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-img {
+.people-list__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.description {
+.content {
   padding-top: 30px;
 }
 
-.full-name {
+.content-name {
   color: $main-font-color;
   font-weight: 500;
   font-size: 16px;
@@ -43,7 +43,7 @@
   margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
-.profession {
+.content__profession {
   font-size: 16px;
   line-height: 1.18;
   color: $paragraphs-mail-tel;
@@ -51,16 +51,16 @@
   letter-spacing: 0.03em;
 }
 
-.social-networks-item {
+.networks-list__item {
   width: 44px;
   height: 44px;
 }
 
-.social-networks-item + .social-networks-item {
+.networks-list__item + .networks-list__item {
   margin-left: 10px;
 }
 
-.social-networks-link {
+.networks-list__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -76,20 +76,20 @@
   }
 }
 
-.social-networks {
+.networks-list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 16px;
 }
 
-.icon {
+.networks-list__icon {
   fill: #afb1b8;
 
   transition: fill $transition-duration $timing-function;
 
-  .social-networks-link:hover &,
-  .social-networks-link:focus & {
+  .networks-list__link:hover &,
+  .networks-list__link:focus & {
     fill: $white-font;
   }
 }
