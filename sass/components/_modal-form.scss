@@ -37,7 +37,7 @@
   transform: translate(-50%, -50%) scale(0.3);
 }
 
-.vector {
+.close-button {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -50,14 +50,14 @@
   right: 8px;
 }
 
-.icon-vector {
+.сlose-button__icon {
   transition: fill $transition-duration $timing-function;
   &:hover {
     fill: $brand-color;
   }
 }
 
-.title-modal {
+.modal__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -70,7 +70,7 @@
   margin-bottom: 12px;
 }
 
-.modal-input {
+.modal__input {
   display: block;
   width: 100%;
   height: 40px;
@@ -91,7 +91,7 @@
   }
 }
 
-.modal-label {
+.modal__label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -99,7 +99,7 @@
   color: $paragraphs-mail-tel;
 }
 
-.modal-comment {
+.modal__comment {
   width: 100%;
   height: 120px;
   margin-top: 4px;
@@ -131,7 +131,7 @@
   }
 }
 
-.agreement-checkbox {
+.checkbox-wrapper__label {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -141,11 +141,11 @@
   align-items: center;
 }
 
-.contract-link {
+.checkbox-wrapper__link {
   color: $brand-color;
 }
 
-.modal-form-btn {
+.modal__btn {
   display: block;
 
   background: $brand-color;
@@ -167,12 +167,12 @@
   margin-top: 30px;
 }
 
-.modal-form-wrapper {
+.modal__wrapper {
   position: relative;
   display: block;
 }
 
-.form-svg {
+.modal__svg {
   position: absolute;
   left: 12px;
   top: 11px;
@@ -180,7 +180,7 @@
   transition: fill $transition-duration $timing-function;
 }
 
-.checkbox {
+.checkbox-wrapper__input {
   margin: 0;
   padding: 0;
   width: 16px;
@@ -197,11 +197,11 @@
   justify-content: center;
 }
 
-.modal-input:focus + .form-svg {
+.modal__input:focus + .modal__svg {
   fill: $brand-color;
 }
 
-.checkbox-icon {
+.checkbox-wrapper__icon {
   width: 16px;
   height: 15px;
   border: 2px solid black;
@@ -215,7 +215,7 @@
     background-color $transition-duration $timing-function;
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox-wrapper__input:checked + .checkbox-wrapper__icon {
   border-color: $brand-color;
   background-color: $brand-color;
   background-size: contain;
@@ -223,6 +223,6 @@
   background-origin: border-box;
 }
 
-.agreement-text {
+.checkbox-wrapper__text {
   margin-left: 7px;
 }
