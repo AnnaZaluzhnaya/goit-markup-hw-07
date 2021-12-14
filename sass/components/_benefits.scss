@@ -1,4 +1,4 @@
-.benefits {
+.benefits-list__heading {
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
@@ -12,15 +12,15 @@
   text-align: left;
 }
 
-.benefits-item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits-item {
+.benefits-list__item {
   width: 270px;
 }
 
-.benefits-img {
+.benefits-list__img {
   display: flex;
   justify-content: center;
   width: 270px;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.description-of-benefits {
+.benefits-list__text {
   line-height: 1.71;
   color: $paragraphs-mail-tel;
   letter-spacing: 0.03em;
