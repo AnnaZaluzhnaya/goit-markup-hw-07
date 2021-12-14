@@ -8,18 +8,20 @@
   align-items: center;
 }
 
-.nav-list {
+.nav {
   display: flex;
   align-items: center;
 }
+
 .connect {
   margin-left: auto;
 }
+
 .header-navigation {
   display: flex;
 }
 
-.nav-items {
+.nav__link {
   position: relative;
 
   color: $main-font-color;
@@ -37,15 +39,11 @@
   }
 }
 
-.nav:not(:last-child) {
+.nav__list:not(:last-child) {
   margin-right: 53px;
 }
 
-.nav-connect:not(:last-child) {
-  margin-right: 53px;
-}
-
-.active {
+.nav__link--active {
   color: $brand-color;
 
   &::after {
@@ -62,7 +60,7 @@
   }
 }
 
-.mail-tel {
+.nav__link--contact {
   color: $paragraphs-mail-tel;
 
   transition: color $transition-duration $timing-function;
@@ -71,12 +69,7 @@
   }
 }
 
-.icon-envelope {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.icon-smartphone {
+.nav__icon {
   margin-right: 10px;
   fill: currentColor;
 }
